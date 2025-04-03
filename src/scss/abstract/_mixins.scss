@@ -1,0 +1,86 @@
+@mixin mobile($query) {
+	& {
+		@media (width <= $query) {
+			@content;
+		}
+	}
+}
+
+@mixin flex($aling: center, $justify: center, $direction: column, $gap: 2rem) {
+	& {
+		display: flex;
+		flex-direction: $direction;
+		align-items: $aling;
+		justify-content: $justify;
+		gap: $gap;
+	}
+}
+
+@mixin grid($columns, $gap) {
+	& {
+		display: grid;
+		grid-template-columns: repeat($columns, 1fr);
+		gap: $gap;
+	}
+}
+
+@mixin gridResponsive() {
+	& {
+		display: grid;
+		grid-template-columns: repeat(auto-fill, minmax(23.475rem, 1fr));
+		gap: 0.9rem;
+	}
+}
+
+@mixin shadowNeo($eje, $color) {
+	& {
+		background-color: $color;
+		$soft-color: color-mix(in srgb, $color, #000, 30%);
+		$light-color: color-mix(in srgb, $color, #fff, 30%);
+		box-shadow: $eje $eje ($eje * 2) $soft-color inset,
+			-($eje) -($eje) ($eje * 2) $light-color inset;
+	}
+}
+
+// Temas
+@mixin apply-theme($theme) {
+	background-image: map-get($theme, main-bg);
+	h1,
+	h3,
+	.extencion__remove {
+		color: map-get($theme, titles);
+	}
+	p {
+		color: map-get($theme, description);
+	}
+	article,
+	header {
+		background-color: map-get($theme, bg-boxes);
+	}
+	.extencion__radiogroup {
+		background-color: map-get($theme, bg-btns);
+		&:has(.extencion__input:checked:nth-of-type(1)) {
+			background-color: map-get($theme, bg-checkend);
+		}
+	}
+	.extencion__slider {
+		background-color: map-get($theme, bg-slider);
+	}
+
+	.theme {
+		background-color: map-get($theme, bg-theme);
+	}
+
+	.extensions__button {
+		background-color: map-get($theme, bg-theme);
+		color: map-get($theme, titles);
+		&:hover {	
+			background-color: map-get($theme, bg-h);
+		}
+		&--active {
+			background-color: map-get($theme, bg-active-btn);
+			color: map-get($theme, titles);
+			outline: none;
+		}
+	}
+}

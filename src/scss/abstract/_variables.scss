@@ -1,0 +1,87 @@
+// --------------------------- Font-Face -----------------------------
+@font-face {
+	font-family: 'NotoSans-Bold';
+	font-weight: 700;
+	src: local('NotoSans-Bold'),
+		url('../assets/fonts/NotoSans-Bold.woff2') format(woff2),
+		url('../assets/fonts/NotoSans-Bold.woff') format(woff),
+		url('../assets/fonts/NotoSans-Bold.ttf') format(truetype);
+}
+
+@font-face {
+	font-family: 'NotoSans-Medium';
+	font-weight: 500;
+	src: local('NotoSans-Medium'),
+		url('../assets/fonts/NotoSans-Medium.woff2') format(woff2),
+		url('../assets/fonts/NotoSans-Medium.woff') format(woff),
+		url('../assets/fonts/NotoSans-Medium.ttf') format(truetype);
+}
+
+@font-face {
+	font-family: 'NotoSans-Regular';
+	font-weight: 400;
+	src: local('NotoSans-Regular'),
+		url('../assets/fonts/NotoSans-Regular.woff2') format(woff2),
+		url('../assets/fonts/NotoSans-Regular.woff') format(woff),
+		url('../assets/fonts/NotoSans-Regular.ttf') format(truetype);
+}
+// --------------------------- Family Fonts ---------------------------
+$NotoSans-bd: 'NotoSans-Bold';
+$NotoSans-md: 'NotoSans-Medium';
+$NotoSans-rg: 'NotoSans-Regular';
+// --------------------------- Size Fonts -----------------------------
+$mobile: 440px;
+$desktop: 1030px;
+$size-fonts: 16px;
+// --------------------------- Colors ---------------------------------
+
+// Neutral
+
+$neutral-900: hsl(227, 75%, 14%);
+$neutral-800: hsl(226, 25%, 17%);
+$neutral-700: hsl(225, 23%, 24%);
+$neutral-600: hsl(226, 11%, 37%);
+$neutral-300: hsl(0, 0%, 78%);
+$neutral-200: hsl(217, 61%, 90%);
+$neutral-100: hsl(0, 0%, 93%);
+$neutral-0: hsl(200, 60%, 99%);
+
+// Red
+
+$red-400: hsl(3, 86%, 64%);
+$red-500: hsl(3, 71%, 56%);
+$red-700: hsl(3, 77%, 44%);
+
+// Gradient
+
+$light-gradient: linear-gradient(180deg, #ebf2fc 0%, #eef8f9 100%);
+$dark-gradient: linear-gradient(180deg, #040918 0%, #091540 100%);
+
+// 
+// Theme 1
+$theme-dark: (
+	main-bg: linear-gradient(180deg, #040918 0%, #091540 100%),
+	titles: hsl(200, 60%, 99%),
+	description: hsl(0, 0%, 78%),
+	bg-boxes: hsl(226, 25%, 17%),
+	bg-btns: hsl(3, 86%, 64%),
+	bg-checkend: hsl(226, 11%, 37%),
+	bg-slider: hsl(200, 60%, 99%),
+	bg-theme: hsl(225, 23%, 24%),
+	bg-h: hsl(226, 11%, 37%),
+	bg-active-btn:  hsl(3, 86%, 64%),
+);
+
+// Theme 2
+$theme-light: (
+	main-bg: linear-gradient(180deg, #ebf2fc 0%, #eef8f9 100%),
+	titles: hsl(227, 75%, 14%),
+	description: hsl(226, 25%, 17%),
+	bg-boxes: hsl(200, 60%, 99%),
+	bg-btns: hsl(3, 77%, 44%),
+	bg-checkend: hsl(0, 0%, 78%),
+	bg-slider: hsl(0, 0%, 93%),
+	bg-theme: hsl(0, 0%, 93%),
+	bg-h: hsl(217, 61%, 90%),
+	bg-active-btn:  hsl(3, 86%, 64%),
+);
