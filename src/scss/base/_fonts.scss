@@ -1,0 +1,57 @@
+@use '../abstract/variables' as v;
+@use '../abstract/mixins' as mx;
+body {
+	min-height: 100dvh;
+	hyphens: manual;
+	font-size: v.$size-fonts;
+	font-family: v.$NotoSans-md;
+	max-width: 1170px;
+	margin: 2.5rem auto;
+	font-smooth: always;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	@include mx.apply-theme(v.$theme-dark);
+	@include mx.mobile(v.$desktop) {
+		max-width: 100%;
+		padding-inline: 1rem;
+	}
+}
+
+.theme-dark {
+	@include mx.apply-theme(v.$theme-dark);
+}
+
+.theme-light {
+	@include mx.apply-theme(v.$theme-light);
+}
+
+h1 {
+	font-family: v.$NotoSans-bd;
+	font-size: 2.1em;
+	letter-spacing: -0.023em;
+}
+
+h3 {
+	letter-spacing: 0.05em;
+	font-size: 1.15em;
+}
+
+p {
+	font-family: v.$NotoSans-rg;
+	font-size: 0.91em;
+	line-height: 1.37;
+}
+
+button {
+	font-family: v.$NotoSans-md;
+	font-size: 0.95em;
+	letter-spacing: -0.023em;
+}
+
+span {
+	font-size: inherit;
+	font-weight: inherit;
+	font-style: inherit;
+	text-decoration: none;
+	color: inherit;
+}
