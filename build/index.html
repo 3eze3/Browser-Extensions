@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="./assets/images/favicon-32x32.png" />
+		<link rel="stylesheet" href="./css/style.css" />
+		<script src="./js/index.mjs" type="module" defer></script>
+
+		<title>Browser extensions manager UI</title>
+	</head>
+	<body>
+		<header class="header">
+			<img
+				class="header__logo"
+				src="./assets/images/ilustration/logo.svg"
+				alt="Logo extensions browser" />
+			<!--  -->
+			<button class="theme" aria-label="Toggle theme: light, dark">
+				<span class="theme__cover"></span>
+				<div class="theme__wrapper">
+					<img
+						class="theme__logo theme__logo-light"
+						src="./assets/images/icons/icon-sun.svg"
+						alt="Ligth theme icon" />
+					<img
+						class="theme__logo theme__logo-dark"
+						src="./assets/images/icons/icon-moon.svg"
+						alt="Dark theme icon" />
+				</div>
+			</button>
+		</header>
+
+		<main class="extensions">
+			<div class="extensions__wrapper">
+				<h1 class="extensions__title">Extensions List</h1>
+				<ul class="extensions__filter">
+					<li class="extensions__item" aria-label="All extensions">
+						<button
+							aria-label="All extencions"
+							tabindex="1"
+							class="extensions__button extensions__button--active"
+							id="all">
+							All
+						</button>
+					</li>
+					<li class="extensions__item" aria-label="Active extensions">
+						<button
+							aria-label="Active extencions"
+							tabindex="2"
+							class="extensions__button"
+							id="active">
+							Active
+						</button>
+					</li>
+					<li class="extensions__item" aria-label="Inactive extensions">
+						<button
+							aria-label="Inactive extencions"
+							tabindex="3"
+							class="extensions__button"
+							id="inactive">
+							Inactive
+						</button>
+					</li>
+				</ul>
+			</div>
+			<!--  -->
+			<section class="list">
+				<h2 class="sr-only">Extensions List</h2>
+
+				<article class="extencion">
+					<div class="extencion__wrapper">
+						</div>
+					</div>
+
+					<footer class="extencion__footer">
+						<button class="extencion__remove">Remove</button>
+
+						<div
+							class="extencion__radiogroup"
+							role="radiogroup"
+							aria-describedby="Active, inactive extensions">
+							<input
+								class="extencion__input"
+								type="radio"
+								id="inactive-radio"
+								value="inactive"
+								name="1"
+								aria-label="inactive extencion" />
+							<input
+								class="extencion__input"
+								type="radio"
+								id="active-radio"
+								name="1"
+								value="active"
+								aria-label="active extencion" />
+							<span class="extencion__slider"></span>
+						</div>
+					</footer>
+				</article>
+				<article class="extencion">
+					<div class="extencion__wrapper"></div>
+
+					<footer class="extencion__footer">
+						<button class="extencion__remove">Remove</button>
+
+						<div
+							class="extencion__radiogroup"
+							role="radiogroup"
+							aria-describedby="Active, inactive extensions">
+							<input
+								class="extencion__input"
+								type="radio"
+								id="inactive-radio"
+								value="inactive"
+								name="2"
+								aria-label="inactive extencion" />
+							<input
+								class="extencion__input"
+								type="radio"
+								id="active-radio"
+								name="2"
+								value="active"
+								aria-label="active extencion" />
+							<span class="extencion__slider"></span>
+						</div>
+					</footer>
+				</article>
+				<article class="extencion">
+					<div class="extencion__wrapper">
+						
+					</div>
+
+					<footer class="extencion__footer">
+						<button class="extencion__remove">Remove</button>
+
+						<div
+							class="extencion__radiogroup"
+							role="radiogroup"
+							aria-describedby="Active, inactive extensions">
+							<input
+								class="extencion__input"
+								type="radio"
+								id="inactive-radio"
+								value="inactive"
+								name="3"
+								aria-label="inactive extencion" />
+							<input
+								class="extencion__input"
+								type="radio"
+								id="active-radio"
+								name="3"
+								value="active"
+								aria-label="active extencion" />
+							<span class="extencion__slider"></span>
+						</div>
+					</footer>
+				</article>
+				<article class="extencion">
+					<div class="extencion__wrapper">
+						
+					</div>
+
+					<footer class="extencion__footer">
+						<button class="extencion__remove">Remove</button>
+
+						<div
+							class="extencion__radiogroup"
+							role="radiogroup"
+							aria-describedby="Active, inactive extensions">
+							<input
+								class="extencion__input"
+								type="radio"
+								id="inactive-radio"
+								value="inactive"
+								name="4"
+								aria-label="inactive extencion" />
+							<input
+								class="extencion__input"
+								type="radio"
+								id="active-radio"
+								name="4"
+								value="active"
+								aria-label="active extencion" />
+							<span class="extencion__slider"></span>
+						</div>
+					</footer>
+				</article>
+				<article class="extencion">
+					<div class="extencion__wrapper">
+						
+					</div>
+
+					<footer class="extencion__footer">
+						<button class="extencion__remove">Remove</button>
+
+						<div
+							class="extencion__radiogroup"
+							role="radiogroup"
+							aria-describedby="Active, inactive extensions">
+							<input
+								class="extencion__input"
+								type="radio"
+								id="inactive-radio"
+								value="inactive"
+								name="5"
+								aria-label="inactive extencion" />
+							<input
+								class="extencion__input"
+								type="radio"
+								id="active-radio"
+								name="5"
+								value="active"
+								aria-label="active extencion" />
+							<span class="extencion__slider"></span>
+						</div>
+					</footer>
+				</article>
+				<article class="extencion">
+					<div class="extencion__wrapper">
+					
+					</div>
+
+					<footer class="extencion__footer">
+						<button class="extencion__remove">Remove</button>
+
+						<div
+							class="extencion__radiogroup"
+							role="radiogroup"
+							aria-describedby="Active, inactive extensions">
+							<input
+								class="extencion__input"
+								type="radio"
+								id="inactive-radio"
+								value="inactive"
+								name="6"
+								aria-label="inactive extencion" />
+							<input
+								class="extencion__input"
+								type="radio"
+								id="active-radio"
+								name="6"
+								value="active"
+								aria-label="active extencion" />
+							<span class="extencion__slider"></span>
+						</div>
+					</footer>
+				</article>
+				<article class="extencion">
+					<div class="extencion__wrapper">
+						
+					</div>
+
+					<footer class="extencion__footer">
+						<button class="extencion__remove">Remove</button>
+
+						<div
+							class="extencion__radiogroup"
+							role="radiogroup"
+							aria-describedby="Active, inactive extensions">
+							<input
+								class="extencion__input"
+								type="radio"
+								id="inactive-radio"
+								value="inactive"
+								name="7"
+								aria-label="inactive extencion" />
+							<input
+								class="extencion__input"
+								type="radio"
+								id="active-radio"
+								name="7"
+								value="active"
+								aria-label="active extencion" />
+							<span class="extencion__slider"></span>
+						</div>
+					</footer>
+				</article>
+				<article class="extencion">
+					<div class="extencion__wrapper">
+						
+					</div>
+
+					<footer class="extencion__footer">
+						<button class="extencion__remove">Remove</button>
+
+						<div
+							class="extencion__radiogroup"
+							role="radiogroup"
+							aria-describedby="Active, inactive extensions">
+							<input
+								class="extencion__input"
+								type="radio"
+								id="inactive-radio"
+								value="inactive"
+								name="8"
+								aria-label="inactive extencion" />
+							<input
+								class="extencion__input"
+								type="radio"
+								id="active-radio"
+								name="8"
+								value="active"
+								aria-label="active extencion" />
+							<span class="extencion__slider"></span>
+						</div>
+					</footer>
+				</article>
+				<article class="extencion">
+					<div class="extencion__wrapper">
+					
+					</div>
+
+					<footer class="extencion__footer">
+						<button class="extencion__remove">Remove</button>
+
+						<div
+							class="extencion__radiogroup"
+							role="radiogroup"
+							aria-describedby="Active, inactive extensions">
+							<input
+								class="extencion__input"
+								type="radio"
+								id="inactive-radio"
+								value="inactive"
+								name="9"
+								aria-label="inactive extencion" />
+							<input
+								class="extencion__input"
+								type="radio"
+								id="active-radio"
+								name="9"
+								value="active"
+								aria-label="active extencion" />
+							<span class="extencion__slider"></span>
+						</div>
+					</footer>
+				</article>
+				<article class="extencion">
+					<!--  -->
+					<div class="extencion__wrapper">
+						
+					</div>
+
+					<footer class="extencion__footer">
+						<button class="extencion__remove">Remove</button>
+
+						<div
+							class="extencion__radiogroup"
+							role="radiogroup"
+							aria-describedby="Active, inactive extensions">
+							<input
+								class="extencion__input"
+								type="radio"
+								id="inactive-radio"
+								value="inactive"
+								name="10"
+								aria-label="inactive extencion" />
+							<input
+								class="extencion__input"
+								type="radio"
+								id="active-radio"
+								name="10"
+								value="active"
+								aria-label="active extencion" />
+							<span class="extencion__slider"></span>
+						</div>
+					</footer>
+				</article>
+
+				<article class="extencion">
+					<div class="extencion__wrapper">
+					
+					</div>
+
+					<footer class="extencion__footer">
+						<button class="extencion__remove">Remove</button>
+
+						<div
+							class="extencion__radiogroup"
+							role="radiogroup"
+							aria-describedby="Active, inactive extensions">
+							<input
+								class="extencion__input"
+								type="radio"
+								id="inactive-radio"
+								value="inactive"
+								name="11"
+								aria-label="inactive extencion" />
+							<input
+								class="extencion__input"
+								type="radio"
+								id="active-radio"
+								name="11"
+								value="active"
+								aria-label="active extencion" />
+							<span class="extencion__slider"></span>
+						</div>
+					</footer>
+				</article>
+
+				<article class="extencion">
+					<div class="extencion__wrapper">
+					
+					</div>
+
+					<footer class="extencion__footer">
+						<button class="extencion__remove">Remove</button>
+
+						<div
+							class="extencion__radiogroup"
+							role="radiogroup"
+							aria-describedby="Active, inactive extensions">
+							<input
+								class="extencion__input"
+								type="radio"
+								id="inactive-radio"
+								value="inactive"
+								name="12"
+								aria-label="inactive extencion" />
+							<input
+								class="extencion__input"
+								type="radio"
+								id="active-radio"
+								name="12"
+								value="active"
+								aria-label="active extencion" />
+							<span class="extencion__slider"></span>
+						</div>
+					</footer>
+					<!--  -->
+					<!--  -->
+				</article>
+
+				<!--  -->
+			</section>
+		</main>
+	</body>
+</html>
