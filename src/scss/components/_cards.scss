@@ -1,0 +1,89 @@
+@use '../abstract/mixins' as mx;
+@use '../abstract/variables' as v;
+.extencion {
+	min-height: 12.5rem;
+	border-radius: 1.15rem;
+	padding: 1.31rem;
+	@include mx.flex($aling: flex-start, $justify: space-between, $gap: 0);
+	box-shadow: 0rem 0rem 0.1rem hsla(0, 0%, 0%, 0.149),
+		0.1rem 0.1rem 0.3rem #14141414, 0.1rem 0.1rem 0.5rem #17171717;
+	opacity: 1;
+	&--hidden {
+		display: none;
+	}
+
+	&__wrapper {
+		width: 100%;
+		min-height: 77.14px;
+		@include mx.flex(
+			$direction: row,
+			$gap: 0.95rem,
+			$aling: flex-start,
+			$justify: flex-start
+		);
+	}
+
+	&__logo {
+		width: 4rem;
+	}
+
+	&__information {
+		@include mx.flex($aling: flex-start, $gap: 0.4rem);
+	}
+
+	&__footer {
+		@include mx.flex($direction: row, $gap: 0, $justify: space-between);
+		width: 100%;
+	}
+
+	&__remove {
+		padding: 0.5rem 0.95rem;
+		border-radius: 1.1rem;
+		background-color: transparent;
+		outline: solid 0.8px v.$neutral-600;
+		transition: background-color 0.15s ease, color 0.15s ease,
+			outline 0.15s ease;
+		&:hover {
+			background-color: v.$red-500;
+			color: v.$neutral-900;
+			outline: none;
+			cursor: pointer;
+		}
+	}
+
+	&__radiogroup {
+		position: relative;
+		width: 2.25rem;
+		height: 1.25rem;
+		border-radius: 1.25rem;
+
+		@include mx.flex($direction: row, $gap: 0.5rem, $justify: space-between);
+		padding-inline: 0.08em;
+	}
+
+	&__input {
+		width: 0.75rem;
+		height: 0.75rem;
+		opacity: 0;
+		&:checked:nth-of-tpe(2) ~ .extencion__slider {
+			left: 1.2rem;
+		}
+
+		&:checked:nth-of-type(1) ~ .extencion__slider {
+			left: 0.1rem;
+		}
+	}
+
+	&__slider {
+		width: 0.95rem;
+		height: 0.95rem;
+		box-shadow: 0rem 0rem 0.15rem v.$neutral-0, 0rem 0em 0.1rem v.$neutral-100;
+		position: absolute;
+		pointer-events: none;
+		top: calc(50% - 0.475rem);
+		left: 0.1rem;
+		left: 1.2rem;
+		border-radius: 50%;
+		transition: left 0.3s ease-in-out;
+	}
+}
