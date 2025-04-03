@@ -10,7 +10,7 @@
 			sizes="32x32"
 			href="./assets/images/favicon-32x32.png" />
 		<link rel="stylesheet" href="./css/style.css" />
-		<script src="./js/index.mjs" type="module" defer></script>
+		<script src="./js/index.mjs" type="module" ></script>
 
 		<title>Browser extensions manager UI</title>
 	</head>
@@ -39,28 +39,25 @@
 			<div class="extensions__wrapper">
 				<h1 class="extensions__title">Extensions List</h1>
 				<ul class="extensions__filter">
-					<li class="extensions__item" aria-label="All extensions">
+					<li class="extensions__item">
 						<button
 							aria-label="All extencions"
-							tabindex="1"
 							class="extensions__button extensions__button--active"
 							id="all">
 							All
 						</button>
 					</li>
-					<li class="extensions__item" aria-label="Active extensions">
+					<li class="extensions__item">
 						<button
 							aria-label="Active extencions"
-							tabindex="2"
 							class="extensions__button"
 							id="active">
 							Active
 						</button>
 					</li>
-					<li class="extensions__item" aria-label="Inactive extensions">
+					<li class="extensions__item">
 						<button
 							aria-label="Inactive extencions"
-							tabindex="3"
 							class="extensions__button"
 							id="inactive">
 							Inactive
@@ -81,19 +78,18 @@
 
 						<div
 							class="extencion__radiogroup"
-							role="radiogroup"
-							aria-describedby="Active, inactive extensions">
+							role="radiogroup">
 							<input
 								class="extencion__input"
 								type="radio"
-								id="inactive-radio"
+								id="inactive-devleans"
 								value="inactive"
 								name="1"
 								aria-label="inactive extencion" />
 							<input
 								class="extencion__input"
 								type="radio"
-								id="active-radio"
+								id="active-devleans"
 								name="1"
 								value="active"
 								aria-label="active extencion" />
@@ -110,18 +106,18 @@
 						<div
 							class="extencion__radiogroup"
 							role="radiogroup"
-							aria-describedby="Active, inactive extensions">
+				>
 							<input
 								class="extencion__input"
 								type="radio"
-								id="inactive-radio"
+								id="inactive-stylespy"
 								value="inactive"
 								name="2"
 								aria-label="inactive extencion" />
 							<input
 								class="extencion__input"
 								type="radio"
-								id="active-radio"
+								id="active-stylespy"
 								name="2"
 								value="active"
 								aria-label="active extencion" />
@@ -140,18 +136,18 @@
 						<div
 							class="extencion__radiogroup"
 							role="radiogroup"
-							aria-describedby="Active, inactive extensions">
+							>
 							<input
 								class="extencion__input"
 								type="radio"
-								id="inactive-radio"
+								id="inactive-speedBoost"
 								value="inactive"
 								name="3"
 								aria-label="inactive extencion" />
 							<input
 								class="extencion__input"
 								type="radio"
-								id="active-radio"
+								id="active-speedBoost"
 								name="3"
 								value="active"
 								aria-label="active extencion" />
@@ -170,18 +166,18 @@
 						<div
 							class="extencion__radiogroup"
 							role="radiogroup"
-							aria-describedby="Active, inactive extensions">
+							>
 							<input
 								class="extencion__input"
 								type="radio"
-								id="inactive-radio"
+								id="inactive-jsonwizard"
 								value="inactive"
 								name="4"
 								aria-label="inactive extencion" />
 							<input
 								class="extencion__input"
 								type="radio"
-								id="active-radio"
+								id="active-jsonwizard"
 								name="4"
 								value="active"
 								aria-label="active extencion" />
@@ -200,18 +196,18 @@
 						<div
 							class="extencion__radiogroup"
 							role="radiogroup"
-							aria-describedby="Active, inactive extensions">
+				>
 							<input
 								class="extencion__input"
 								type="radio"
-								id="inactive-radio"
+								id="inactive-tabmaster"
 								value="inactive"
 								name="5"
 								aria-label="inactive extencion" />
 							<input
 								class="extencion__input"
 								type="radio"
-								id="active-radio"
+								id="active-tabmaster"
 								name="5"
 								value="active"
 								aria-label="active extencion" />
@@ -230,18 +226,18 @@
 						<div
 							class="extencion__radiogroup"
 							role="radiogroup"
-							aria-describedby="Active, inactive extensions">
+							>
 							<input
 								class="extencion__input"
 								type="radio"
-								id="inactive-radio"
+								id="inactive-viewport"
 								value="inactive"
 								name="6"
 								aria-label="inactive extencion" />
 							<input
 								class="extencion__input"
 								type="radio"
-								id="active-radio"
+								id="active-viewport"
 								name="6"
 								value="active"
 								aria-label="active extencion" />
@@ -260,18 +256,18 @@
 						<div
 							class="extencion__radiogroup"
 							role="radiogroup"
-							aria-describedby="Active, inactive extensions">
+							>
 							<input
 								class="extencion__input"
 								type="radio"
-								id="inactive-radio"
+								id="inactive-markup"
 								value="inactive"
 								name="7"
 								aria-label="inactive extencion" />
 							<input
 								class="extencion__input"
 								type="radio"
-								id="active-radio"
+								id="active-markup"
 								name="7"
 								value="active"
 								aria-label="active extencion" />
@@ -290,18 +286,18 @@
 						<div
 							class="extencion__radiogroup"
 							role="radiogroup"
-							aria-describedby="Active, inactive extensions">
+							>
 							<input
 								class="extencion__input"
 								type="radio"
-								id="inactive-radio"
+								id="inactive-grid"
 								value="inactive"
 								name="8"
 								aria-label="inactive extencion" />
 							<input
 								class="extencion__input"
 								type="radio"
-								id="active-radio"
+								id="active-grid"
 								name="8"
 								value="active"
 								aria-label="active extencion" />
@@ -320,18 +316,18 @@
 						<div
 							class="extencion__radiogroup"
 							role="radiogroup"
-							aria-describedby="Active, inactive extensions">
+				>
 							<input
 								class="extencion__input"
 								type="radio"
-								id="inactive-radio"
+								id="inactive-palette"
 								value="inactive"
 								name="9"
 								aria-label="inactive extencion" />
 							<input
 								class="extencion__input"
 								type="radio"
-								id="active-radio"
+								id="active-palette"
 								name="9"
 								value="active"
 								aria-label="active extencion" />
@@ -350,18 +346,18 @@
 						<div
 							class="extencion__radiogroup"
 							role="radiogroup"
-							aria-describedby="Active, inactive extensions">
+	>
 							<input
 								class="extencion__input"
 								type="radio"
-								id="inactive-radio"
+								id="inactive-link"
 								value="inactive"
 								name="10"
 								aria-label="inactive extencion" />
 							<input
 								class="extencion__input"
 								type="radio"
-								id="active-radio"
+								id="active-link"
 								name="10"
 								value="active"
 								aria-label="active extencion" />
@@ -381,18 +377,18 @@
 						<div
 							class="extencion__radiogroup"
 							role="radiogroup"
-							aria-describedby="Active, inactive extensions">
+			>
 							<input
 								class="extencion__input"
 								type="radio"
-								id="inactive-radio"
+								id="inactive-dom"
 								value="inactive"
 								name="11"
 								aria-label="inactive extencion" />
 							<input
 								class="extencion__input"
 								type="radio"
-								id="active-radio"
+								id="active-dom"
 								name="11"
 								value="active"
 								aria-label="active extencion" />
@@ -412,18 +408,18 @@
 						<div
 							class="extencion__radiogroup"
 							role="radiogroup"
-							aria-describedby="Active, inactive extensions">
+					>
 							<input
 								class="extencion__input"
 								type="radio"
-								id="inactive-radio"
+								id="inactive-console"
 								value="inactive"
 								name="12"
 								aria-label="inactive extencion" />
 							<input
 								class="extencion__input"
 								type="radio"
-								id="active-radio"
+								id="active-console"
 								name="12"
 								value="active"
 								aria-label="active extencion" />
