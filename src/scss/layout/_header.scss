@@ -1,0 +1,24 @@
+@use '../abstract/mixins' as mx;
+@use '../abstract/variables' as v;
+.header {
+	min-height: 4.6rem;
+	padding-inline: 1rem;
+	border-radius: 1.25rem;
+	@include mx.flex($direction: row, $justify: space-between, $gap: 0);
+	&__logo {
+		width: 11.2rem;
+		filter: brightness(40%) invert(0.5);
+	}
+}
+
+.sr-only {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	padding: 0;
+	margin: -1px;
+	overflow: hidden;
+	clip: rect(0, 0, 0, 0);
+	white-space: nowrap;
+	border-width: 0;
+}
